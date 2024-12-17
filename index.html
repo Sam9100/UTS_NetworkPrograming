@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Monitoring Koneksi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📡 Dashboard Monitoring Jaringan</h1>
+            <p>Monitor status perangkat jaringan Anda secara real-time</p>
+        </header>
+
+        <!-- Form untuk menambahkan perangkat -->
+        <div class="add-device-form">
+            <input type="text" id="device-name" placeholder="Nama Perangkat" required>
+            <input type="text" id="device-ip" placeholder="IP Address" required>
+            <button onclick="addDevice()">➕ Tambah Perangkat</button>
+        </div>
+
+        <!-- Tabel Monitoring -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Perangkat</th>
+                        <th>IP Address</th>
+                        <th>Status</th>
+                        <th>Latensi (ms)</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="device-table">
+                    <!-- Data perangkat diisi oleh JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
